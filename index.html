@@ -11,8 +11,11 @@
     <title>Pokedex</title>
   </head>
   <body>
+      <!-- -->
+      <!--Cabezera De La Pagina -->
     <header class="bg-danger bg-gradient text-warning text-center container-fluid">
         <div class="row">
+            <!--los col md y lg de ambos div tienen que sumar 12 -->
             <div class="col-12 col-md-6 col-lg-3">
                 <img src="img/logo.png" class="img" alt="logo">
             </div>
@@ -21,6 +24,7 @@
             </div>
         </div>
     </header>
+    <!-- Parte Principal de la Pagina-->
     <main class="container-fluid pt-3">
 
         <div class="row">
@@ -36,7 +40,7 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="description-txt">Descripcion</label>
-                            <input type="text" class="form-control" id="description-txt">
+                            <textarea id="description-txt" ></textarea>
                         </div>
                     </div>
                     <div class="mb-3">
@@ -50,7 +54,7 @@
                             class="form-check-label">si</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input type="radio" 
+                            <input type="radio" checked
                             name="legendario-rb" 
                             id="legendario-no"  class="form-check-input">
                             <label for="legendario-no" 
@@ -83,13 +87,17 @@
                 </div>
             </div>
             <div class="col col-md col-lg">
+                            <!--aca se crea la tarjeta donde esta el titulo pokedex -->
+                            <!-- Class siempre sirve para diseñar o editar-->
                     <div class="card">
                         <div class="card text-light bg-warning text-center">
                         <span>Pokedex</span>
                     </div>
                     <div class="card-body">
+                        <!-- Aqui Se crea la Tabla -->
                         <table class="table table-hover table-bordered table-striped">
                             <thead>
+                                <!-- siempre el th adentro del tr -->
                                 <tr>
                                     <th>N°</th>
                                     <th>Nombre</th>
@@ -99,6 +107,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <!--lo mismo dicho anteriormente con el td -->
                                 <tr>
                                     <td>1</td>
                                     <td>bulbasour</td>
@@ -128,6 +137,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
